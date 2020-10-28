@@ -15,13 +15,13 @@ public class main {
 
     private static void calculate() throws ScriptException {
         int operand1, operand2, operand3, operand4;
-        char operator1, operator2, operator3, operator4;
+        char operator1, operator2, operator3;
         Random random = new Random();
         ScriptEngineManager mgr = new ScriptEngineManager();
         ScriptEngine engine = mgr.getEngineByName("JavaScript");
         char[] operators = new char[]{'+', '-', '/', '*'};
         int result = 0;
-        String operation = ""; // this will hold all the operands and operators
+        String operation = "";
         List<Integer> operands = Arrays.asList(1,3,4,6);
         while (result != 24) {
             Collections.shuffle(operands);
