@@ -32,14 +32,12 @@ public class main {
             operator1 = operators[random.nextInt(3)];
             operator2 = operators[random.nextInt(3)];
             operator3 = operators[random.nextInt(3)];
-
-            /*So here is where it got a bit tricky and you can go different ways about this.
-             I went the easy way and used the built-in Javascript engine.*/
             operation = String.valueOf(operand1) + operator1 + String.valueOf(operand2) + operator2 + String.valueOf(operand3) + operator3 + String.valueOf(operand4);
             System.out.println(operation);
             result = (int) Double.parseDouble(engine.eval(operation).toString());
 
         }
+        System.out.println("FINALLY:");
         System.out.println(operation + "= 24");
     }
 }
